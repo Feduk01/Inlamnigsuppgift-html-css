@@ -1,0 +1,155 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Russo+One&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Russo One", sans-serif;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+.myVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -100;
+    grid-column: 1 / 9;
+    grid-row: 1 / 6;
+    background: linear-gradient(rgba(0, 0, 0, 0), #2c2c2c);
+}
+
+@media (max-width: 800px) {
+    .myVideo {
+        display: none;
+    }
+    body {
+        background-image: url("./images/home-background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto repeat(4, 1fr);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.site-nav .logo {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1;
+    justify-content: space-around;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+.site-nav ul {
+    display: flex;
+    grid-column: 6/9;
+    grid-row: 1;
+    justify-content: space-around;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+.site-nav li,
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: aliceblue;
+}
+
+.title {
+    grid-column: 2/8;
+    grid-row: 3;
+}
+
+.pre-title {
+    grid-column: 2/8;
+    grid-row: 4;
+    font-size: 2em;
+}
+
+.title,
+.pre-title {
+    align-self: center;
+    justify-self: center;
+    color: aliceblue;
+    text-shadow: 2px 2px 0px #000;
+    text-align: center;
+}
+
+/* Section-2 */
+
+.section-2 {
+    background-color: #000000;
+    color: white;
+    height: 200em;
+    padding-top: 5em;
+}
+
+.sems-intro,
+.spek-intro {
+    padding-bottom: 3em;
+    width: 50%;
+    text-wrap: wrap;
+    margin: 0 auto;
+}
+
+.sems-intro h2,
+.spek-intro h2 {
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}
+
+.sems-intro p,
+.spek-intro p {
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+.top-sems,
+.top-speks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    max-width: 13%;
+    margin: 0 auto;
+    /* opacity: 0.9; */
+}
+
+.item1,
+.item2,
+.item3,
+.spek1,
+.spek2,
+.spek3 {
+    background-color: #222121;
+    padding: 3em;
+    border-radius: 1em;
+}
+
+.item1 img,
+.item2 img,
+.item3 img,
+.spek1 img,
+.spek2 img,
+.spek3 img {
+    width: 15em;
+    border-radius: 1em;
+}
+
+.spek-intro {
+    padding-top: 5em;
+}
