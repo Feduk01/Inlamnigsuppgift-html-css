@@ -276,10 +276,12 @@ button:hover {
 .arrow-up {
     background-color: #4a3c6c;
     padding: 0.2em;
-    border-radius: 1em;
+    border-radius: 0.5em;
     transition: all 0.3s ease;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    max-width: 100%;
+    display: block;
+    max-width: 4%;
+
     /* margin: 1em 0 0 2.6em; */
     font-size: 3em; /* Размер символа */
     color: #ffffff; /* Цвет ссылки */
