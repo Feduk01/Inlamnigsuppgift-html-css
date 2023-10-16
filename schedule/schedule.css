@@ -7,7 +7,7 @@
     font-family: "Russo One", sans-serif;
     color: white;
     letter-spacing: 0.1em;
-    /* border: 1px dashed pink; */
+    border: 1px dashed pink;
 }
 
 :root {
@@ -279,8 +279,8 @@ button:hover {
     border-radius: 1em;
     transition: all 0.3s ease;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    margin: 1em 0 0 2.6em;
+    max-width: 100%;
+    /* margin: 1em 0 0 2.6em; */
     font-size: 3em; /* Размер символа */
     color: #ffffff; /* Цвет ссылки */
 }
