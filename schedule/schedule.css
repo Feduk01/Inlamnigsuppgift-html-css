@@ -10,6 +10,12 @@
     /* border: 1px dashed pink; */
 }
 
+:root {
+    --primary: #4a3c6c;
+    --secondary: #312a42;
+    --third: rgb(255, 255, 255);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -54,7 +60,7 @@ body {
 
 .site-header {
     padding: 30px;
-    background: #312a42;
+    background: var(--secondary);
 }
 
 .site-header ul {
@@ -96,7 +102,7 @@ body {
     display: none;
     top: -0.7em;
     right: -1.5em;
-    background-color: #312a42;
+    background-color: var(--primary);
     border: 1px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: absolute;
@@ -177,7 +183,7 @@ body {
 
 .links {
     margin: 0 10em;
-    padding: 4em;
+    padding: 5em;
 }
 
 .links ul {
@@ -193,12 +199,13 @@ button {
     max-width: 6em;
     border-radius: 1em;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #41345e;
 }
 
 button:hover {
     transform: translateY(-15px);
-    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
 }
 /* --------------HEADER-MAIN-ENDS----------------------------- */
 /* --------------SCHEDULE-MAIN----------------------------- */
@@ -212,7 +219,7 @@ button:hover {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2fr 1fr;
     border: 2px solid rgb(255, 255, 255);
-    margin: 8em 0;
+    margin: 7em 0;
 }
 
 .schedule-day1 > * {
@@ -266,6 +273,23 @@ button:hover {
     grid-column: 2/5;
 }
 
+.arrow-up {
+    background-color: #4a3c6c;
+    padding: 0.2em;
+    border-radius: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 1em 0 0 2.6em;
+    font-size: 3em; /* Размер символа */
+    color: #ffffff; /* Цвет ссылки */
+}
+
+.arrow-up:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (max-width: 830px) {
     .flex-container {
         margin: 0;
@@ -285,6 +309,10 @@ button:hover {
     .links {
         margin: 0;
     }
+
+    .links {
+        padding: 1.5em 4em 4em 4em;
+    }
     .spek {
         grid-template-columns: 1fr;
         gap: 10px;
@@ -294,14 +322,15 @@ button:hover {
         max-width: 100%;
         height: auto;
         grid-column: 2/3;
-        /* margin: 0 78px; */
+        border-radius: 1em;
     }
 
     .spek-title {
-        max-height: 50%;
-        grid-column: 3;
+        max-height: 100%;
+        max-width: 100%;
+        text-wrap: nowrap;
+        grid-column: 3/4;
         grid-row: 2;
-        /* margin-left: 8em; */
         align-content: start;
     }
 
@@ -312,6 +341,15 @@ button:hover {
 
     .schedule-day1 {
         margin: 2em 0;
+    }
+
+    .arrow-up {
+        margin: 0.5em 0 0 1em;
+        font-size: 3em; /* Размер символа */
+    }
+
+    .schedule {
+        padding: 0;
     }
 }
 
