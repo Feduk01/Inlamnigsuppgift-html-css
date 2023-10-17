@@ -336,6 +336,11 @@ button:hover {
     .links {
         padding: 2em 4em 4em 4em;
     }
+
+    .schedule-day1 {
+        padding: 1em;
+        border: 0;
+    }
     .spek {
         grid-template-columns: 1fr;
         gap: 10px;
