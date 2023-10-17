@@ -150,14 +150,14 @@ body {
 .main-content {
     background-color: #4a3c6c;
     text-shadow: 2px 2px 0px rgb(0, 0, 0);
-    padding: 5em 0;
+    padding: 0 0 5em 0;
 }
 .background-img {
     background-image: url(../images/registration.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 1.5em;
+    /* border-radius: 1.5em; */
 }
 
 .section-header {
@@ -269,9 +269,11 @@ section form button:hover {
     transition: all 0.3s ease;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     display: block;
-    max-width: 100%;
+    max-width: 3.5%;
     font-size: 3em;
     color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .arrow-up:hover {
@@ -295,8 +297,17 @@ section form button:hover {
         margin-bottom: 0.5em;
     }
 
+    .section-header p {
+        letter-spacing: 0.1em;
+    }
+
     section form {
         width: 100%;
+    }
+
+    .arrow-up {
+        margin: 0 auto;
+        max-width: 10%;
     }
 }
 
@@ -335,7 +346,7 @@ hr {
 @media screen and (max-width: 830px) {
     .footer-info {
         grid-template-columns: 1fr;
-        padding: 0;
+        padding: 1em;
         justify-items: normal;
         margin-bottom: 1em;
     }
@@ -345,6 +356,6 @@ hr {
     }
 
     .copy-right-container {
-        padding: 1em 0;
+        padding: 1em;
     }
 }
