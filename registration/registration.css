@@ -150,14 +150,14 @@ body {
 .main-content {
     background-color: #4a3c6c;
     text-shadow: 2px 2px 0px rgb(0, 0, 0);
-    padding: 0 0 5em 0;
+    padding: 5em 0 5em 0;
 }
 .background-img {
     background-image: url(../images/registration.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* border-radius: 1.5em; */
+    border-radius: 1.5em;
 }
 
 .section-header {
@@ -179,6 +179,26 @@ body {
     margin-top: 0.5em;
 }
 /* --------------HEADER-MAIN-ENDS---------------------------- */
+
+.arrow-down {
+    background-color: #4a3c6c;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    max-width: 3.5%;
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+    margin: 3em auto;
+}
+
+.arrow-down:hover {
+    transform: translateY(15px);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
 /* --------------FORM-MAIN----------------------------- */
 
 /* Общий стиль для формы */
@@ -187,7 +207,7 @@ section form {
     padding: 1.25em;
     border-radius: 0.5em;
     width: 60%;
-    margin: 5em auto;
+    margin: 0em auto 5em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -285,6 +305,11 @@ section form button:hover {
     .flex-container {
         margin: 0;
     }
+
+    .section-header {
+        padding: 1em 1em 1.6em 1em;
+    }
+
     .main-content {
         padding-top: 0;
     }
@@ -308,6 +333,10 @@ section form button:hover {
     .arrow-up {
         margin: 0 auto;
         max-width: 10%;
+    }
+
+    .arrow-down {
+        display: none;
     }
 }
 
