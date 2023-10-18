@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Russo+One&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Russo One", sans-serif;
+    color: white;
+    letter-spacing: 0.1em;
+    /* border: 1px dashed pink; */
+}
+
+:root {
+    --primary: #4a3c6c;
+    --secondary: #312a42;
+    --third: rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+    background-color: transparent;
+}
+
+li {
+    list-style-type: none;
+}
+
+html,
+body {
+    /* height: 100%; */
+    line-height: 1;
+    font-size: 16px;
+}
+
+.flex-container {
+    max-width: 1273px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* --------------HEADER----------------------------- */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+.site-header {
+    padding: 30px;
+    background: var(--secondary);
+}
+
+.site-header ul {
+    display: flex;
+    grid-column: 4/9;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.site-header li {
+    margin-left: 5.4em;
+}
+
+/* Hamburger */
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    grid-column: 8/9;
+    position: relative;
+}
+
+.bar {
+    background-color: white;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    top: -0.7em;
+    right: -1.5em;
+    background-color: var(--primary);
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    border-radius: 20px;
+}
+
+.menu-items li {
+    padding: 10px 8px;
+    border-bottom: 1px solid white;
+    margin: 0;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.menu-items li:last-child {
+    border-bottom: none;
+}
+
+.hamburger-menu:hover .menu-items {
+    display: block;
+}
+
+.hover-background {
+    transition: background-color 0.2s ease;
+}
+
+.hover-background:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(56, 111, 228);
+}
+
+@media screen and (max-width: 1600px) {
+    .site-header ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        z-index: 2;
+    }
+}
+/* --------------HEADER ENDS----------------------------- */
+/* --------------MAIN----------------------------- */
+/* --------------HEADER-MAIN----------------------------- */
+.main-content {
+    background-color: #4a3c6c;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+    padding: 0 0 5em 0;
+}
+.background-img {
+    background-image: url(../images/registration.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* border-radius: 1.5em; */
+}
+
+.section-header {
+    padding: 1em;
+}
+
+.section-header h1 {
+    line-height: 1.5em;
+}
+
+.section-header h2 {
+    line-height: 1.7em;
+}
+
+.section-header p {
+    font-size: 1.5em;
+    line-height: 1.7em;
+    letter-spacing: 0.2em;
+    margin-top: 0.5em;
+}
+/* --------------HEADER-MAIN-ENDS---------------------------- */
+/* --------------FORM-MAIN----------------------------- */
+
+/* Общий стиль для формы */
+section form {
+    background-color: #5b4a81;
+    padding: 1.25em;
+    border-radius: 0.5em;
+    width: 60%;
+    margin: 5em auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для fieldset и legend */
+section form fieldset {
+    margin-bottom: 1.25em;
+    border: 1px solid #ffffff;
+    border-radius: 0.3em;
+    padding: 0.6em;
+}
+
+section form legend {
+    font-weight: bold;
+    color: #ffffff;
+    padding: 0.3em;
+}
+
+/* Стили для полей и меток */
+section form label {
+    display: inline-block;
+    margin: 0.6em 0;
+    font-weight: bold;
+}
+
+section form input[type="text"],
+section form input[type="email"],
+section form textarea {
+    padding: 0.6em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 0.6em;
+    color: black;
+}
+
+section form input:valid {
+    border-right: 1em solid rgb(23, 192, 104);
+}
+
+section form input:invalid {
+    border-right: 1em solid rgb(201, 195, 31);
+}
+.error-message {
+    visibility: hidden;
+    margin: 0;
+    color: rgb(201, 195, 31);
+}
+
+section form input:invalid + .error-message {
+    visibility: visible;
+}
+
+/* Стили для радиокнопок */
+section form input[type="radio"] {
+    margin-right: 0.3em;
+}
+
+/* Стилизация кнопки отправки */
+section form button {
+    display: block;
+    margin-top: 1.25em;
+    padding: 0.6em 1.25em;
+    background-color: #096cd6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+section form button:hover {
+    background-color: rgb(71, 168, 192);
+}
+
+.arrow-up {
+    background-color: #4a3c6c;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    max-width: 3.5%;
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.arrow-up:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 830px) {
+    .flex-container {
+        margin: 0;
+    }
+    .main-content {
+        padding-top: 0;
+    }
+    .background-img {
+        border-radius: 0;
+    }
+
+    .section-header h1 {
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .section-header p {
+        letter-spacing: 0.1em;
+    }
+
+    section form {
+        width: 100%;
+    }
+
+    .arrow-up {
+        margin: 0 auto;
+        max-width: 10%;
+    }
+}
+
+footer {
+    background-color: rgb(36, 100, 116);
+    text-shadow: 2px 2px 0px rgb(46, 67, 112);
+    /* height: 50vh; */
+}
+
+.flex-container {
+    /* height: 100vh; */
+    max-width: 1273px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 8em 10em;
+}
+
+hr {
+    width: 100%;
+    height: 0.2em;
+    background-color: white;
+}
+
+.copy-right-container {
+    padding: 2em 21em;
+}
+
+@media screen and (max-width: 830px) {
+    .footer-info {
+        grid-template-columns: 1fr;
+        padding: 1em;
+        justify-items: normal;
+        margin-bottom: 1em;
+    }
+
+    .footer-info > * {
+        margin-top: 1em;
+    }
+
+    .copy-right-container {
+        padding: 1em;
+    }
+}
