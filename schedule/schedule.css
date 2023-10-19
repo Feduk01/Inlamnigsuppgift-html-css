@@ -360,10 +360,10 @@ button:hover {
         height: auto;
         grid-column: 2/3;
         border-radius: 1em;
-        margin-bottom: -3em;
+        margin-bottom: -1em;
     }
     .spek .negative-margin-bot {
-        margin-bottom: -2.5em;
+        margin-bottom: -0.5em;
     }
 
     .spek-title {
@@ -376,6 +376,10 @@ button:hover {
         padding-bottom: 9em;
     }
 
+    .padding{
+        padding-bottom: 11em;
+    }
+
     .spek-info {
         grid-row: 3;
         line-height: 1.5em;
@@ -384,11 +388,11 @@ button:hover {
     }
 
     .padding-bot {
-        padding-bottom: 10em;
+        padding-bottom: 12em;
     }
 
     .padding-bot-extra {
-        padding-bottom: 12em;
+        padding-bottom: 14em;
     }
 
     .schedule-day1 {
@@ -400,7 +404,7 @@ button:hover {
     }
 
     .arrow-up {
-        max-width: 10%;
+        max-width: 13%;
         margin: 0.5em auto;
         font-size: 3em; /* Размер символа */
     }

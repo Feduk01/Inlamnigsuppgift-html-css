@@ -201,7 +201,7 @@ body {
 
 /* --------------FORM-MAIN----------------------------- */
 
-/* Общий стиль для формы */
+
 section form {
     background-color: #5b4a81;
     padding: 1.25em;
@@ -211,7 +211,7 @@ section form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для fieldset и legend */
+
 section form fieldset {
     margin-bottom: 1.25em;
     border: 1px solid #ffffff;
@@ -225,7 +225,7 @@ section form legend {
     padding: 0.3em;
 }
 
-/* Стили для полей и меток */
+
 section form label {
     display: inline-block;
     margin: 0.6em 0;
@@ -260,12 +260,12 @@ section form input:invalid + .error-message {
     visibility: visible;
 }
 
-/* Стили для радиокнопок */
+
 section form input[type="radio"] {
     margin-right: 0.3em;
 }
 
-/* Стилизация кнопки отправки */
+
 section form button {
     display: block;
     margin-top: 1.25em;
@@ -332,7 +332,7 @@ section form button:hover {
 
     .arrow-up {
         margin: 0 auto;
-        max-width: 10%;
+        max-width: 13%;
     }
 
     .arrow-down {
